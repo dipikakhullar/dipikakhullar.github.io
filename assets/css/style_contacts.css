@@ -1,0 +1,62 @@
+
+body {
+	/*background-color: #e4e4e4e0;*/
+	background-color: #212121;
+	margin: 0px;
+}
+
+section {
+	height: 100vh;
+	position: relative;
+	height:100vh;
+
+}
+.contact {
+	
+}
+
+.icon-img {
+	height: 45px;
+	display: inline-block;
+	text-decoration: none;
+
+
+}
+
+.icon-item:visited {
+	text-decoration: none;
+
+}
+
+.icon-item :hover{
+	height: 50px;
+	opacity: 1;
+	
+}
+
+.icon-item {
+	opacity: 1;
+	padding-left: 30px;
+}
+
+
+.icons {
+	position: absolute;
+	display:block;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.contact-heading {
+	text-align: center;
+	font-family: 'Fredericka the Great', cursive;
+	color: white;
+	font-size: 48px;
+	position: relative;
+	top: 35%;
+}
+
+
+
+

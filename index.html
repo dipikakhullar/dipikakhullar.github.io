@@ -2,31 +2,102 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/experience.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style_contacts.css">
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
-	<title>Final Project</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Pompiere|Raleway" rel="stylesheet">
+	<script src="typeit.js"></script>
+	<title>home</title>
 </head>
 <body>
-
-	<!-- This is the sidebar container. nav identifies it as a navigation item? -->
-
 	<nav class= "topnav">
 		<ul class="navbar"> 
-			<li class = "navbar-item"> <a href= "index.html"> Home </a> </li>
-			<li class = "navbar-item"> <a href= "about.html"> About </a> </li>
-			<li class = "navbar-item"> <a href= "experiences.html"> Experiences </a> </li>
-			<li class = "navbar-item"> <a href= "contact.html"> Contact </a> </li>
+			<li class = "navbar-item active" id="home"> About  </li>
+			<li class = "navbar-item inactive" id="about"> Writings  </li>
 		</ul>
 	</nav>
+	<section class="home">
+		<div class="text">
+			<ul class="text-animation hidden"> 
+				<li>H</li>
+				<li>i</li>
+				<li>,</li>
+				<li> </li>
+				<li></li>
+				<li>I</li>
+				<li>'</li>
+				<li>m</li>
+				<li>  </li>
+				<li>  </li>
+				<li>D</li>
+				<li>i</li>
+				<li>p</li>
+				<li>i</li>
+				<li>k</li>
+				<li>a</li>
+				<li>.</li>
+				</ul>
 
-	<section class="section" id="about-section">	
-		<div id="images">
-			<div class="item"> <img src = "assets/img/me.jpg" / class="self-photo"> </div>
+			<span class="type-it"></span>
 		</div>
-		<div id="bio"> <p> <font size="42"> Hi, </font> <font size="36"> my name is Dipika. </font> I'm a sophomore here at UC Berkeley studying Computer Science and Economics. However, I wasn't always as interested by the world of technology as I am today. It was only when I came here to Silicon valley, the epicenter of tech and innovation where I discovered what I was truly passionate about. I love learning and sharing what I know with others. Read about my experiences in the about section! </p> </div>
-		<!-- <div class="info"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." s</div> -->
-		<!-- <div class="info"> this is my information </div> -->
+			<div class="item"> <img src = "assets/img/me.jpg" / class="self-photo"> </div>
 	</section>
+
+	<section class = "experience">
+		<div class= "heading"> Skills </div>
+		<div class="section-container">
+
+			<div class = "skill-container">
+				<div class="skill"> PRODUCT DESIGN</div>
+				<div class="skill"> SOFTWARE DEVELOPMENT</div>
+				<div class="skill"> ANALYTICS</div>
+			</div>
+
+			<div class  ="img-container"> 
+				<div class="img-wrapper">
+					<img src="assets/img/design.png" class="skill-img img-position"> 
+				</div>
+
+				<div class="img-wrapper">
+					<img src="assets/img/gear.png" class="skill-img img-position">
+				</div>
+
+				<div class="img-wrapper">
+					<img src="assets/img/research.png" class="skill-img img-position">
+				</div>
+			</div>
+
+			<div class="content-container">
+				<div class="content">I have a growing interest in the process, aesthetics, and human factors that go into the design process. I aim to learn the learn how to fulfill the precise desires of users, so that I can find simple yet elegant solutions to fulfill their needs. </div>
+				
+				<div class="content">I’m an aspiring software engineer. My interest in software engineering stems from my love for art and creativity. Software is the closest thing to magic that we’ll see in our lifetimes. We can create entire worlds with their own sets of rules, and in many cases the only practical limitations are those of our own imaginations.</div>
+
+				<div class="content"> I find myself at the interstection of business and software. Economics and Computer Science combined has changed my outlook and offers new perspectives when solving a problem.</div>
+			</div>
+		</div>
+	</section>
+	<section class = "contact">
+		<div class="contact-heading"> Let's Chat </div>
+        <div class = "icons">
+            <a href="mailto:dkhullar98@berkeley.edu?" class="icon-item">
+              <img src="assets/img/email.png" / class="icon-img">
+            </a>
+            <a href="https://github.com/dipikakhullar" class="icon-item">
+                <img src="assets/img/github.png" / class="icon-img">
+            </a>
+            <a href="https://www.linkedin.com/in/dipikakhullar/" class="icon-item">
+                  <img src="assets/img/linkedin.png" / class="icon-img">
+            </a>
+            <a href="assets/img/khullar_dipika_resume.pdf" class="icon-item">
+                <img src="assets/img/resume.png" / class="icon-img">
+            </a> 
+            
+        </div>
+    </section>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>

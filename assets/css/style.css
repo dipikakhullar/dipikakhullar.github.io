@@ -1,94 +1,79 @@
 
-
 body {
+	background-color:#212121;
 	margin: 0px;
-	background-color: #f5f5f5;
+	
 }
 
-.topnav {
-	opacity:.5;
-	background-color: black;
-	width: 100%;
-	position: fixed;
-}
-
-
-.navbar {
-	list-style-type: none;
-	overflow: hidden;
-	display: block;
-	margin: 0;
-	margin-right: 40px;
-}
-
-.navbar-item a{
-	font-family: 'News Cycle', sans-serif;
-	font-weight: 700;
-	font-size: 18px;
-	color: white;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 20px;
-	padding-right: 20px;
-	float: right;
-}
-
-.navbar-item a:hover {
-	font-family: 'Open Sans Condensed', sans-serif;
-    color: rgba(0,0,0,.7);
-	background-color: white;
-	color: black;
-}
-
-.navbar-item a.active {
-	background-color: white;
-	color: white;
-}
-
-.topnav a:link{
-	text-decoration: none;
-}
-
-
-.section {
-	margin-top: 70px;
-	margin-left: 50px;
-	margin-right: 25px;
-	display: inline-block;
-
+section {
+	position: relative;
+	height:100vh;
 }
 
 .self-photo {
+	position: relative;
+	top: 50px;
+	padding-left: 80px;
+	padding-right: 80px;
+	padding-top: 80px;
+	padding-bottom: 80px;
 	border-radius: 50%;
 	height: 450px;
 
 }
 
-#bio {
-	display: inline-block;
+
+.text-animation {
+	/*position: relative;*/
+	list-style: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-10%) translateY(-50%);
+	z-index: 1;
 }
 
-#images {
-	display: inline-block;
+.text-animation li{
+	display: inline-block; /*next to each other*/
+	/*margin-right: 5px;*/
+	font-family: sans-serif;
+	font-weight: 300;
+	font-size: 5em;
+	color: #e0e0e0;
+	transition: all 2.5s ease;
+	opacity: 1;
+
 }
 
-.class {
-	display: inline-block;
+.text-animation li:last-child {
+	margin-right: 0;
+
 }
 
-.class {
-	display: inline-block;
+.text-animation.hidden li {
+	opacity: 0;
+
 }
 
-#bio {
-	width: 500px;
-	font-family: 'Oswald', sans-serif;
-	font-weight: 70;
-    font-size: 24px;
-    color: rgba(0,0,0,.7);
-    text-align: center;
-    position: relative;
-    bottom: 80px;
-    left: 50px;
-}
+
+.text-animation.hidden li:nth-child(1) {transform: translateX(-50px) translateY(-50px) ;}
+.text-animation.hidden li:nth-child(2) {transform: translateX(20px) translateY(10px) ;}
+.text-animation.hidden li:nth-child(3) {transform: translateX(-50px) translateY(-80px) ;}
+.text-animation.hidden li:nth-child(4) {transform: translateX(10px) translateY(-20px) ;}
+.text-animation.hidden li:nth-child(5) {transform: translateX(-100px) translateY(20px) ;}
+.text-animation.hidden li:nth-child(6) {transform: translateX(20px) translateY(-20px) ;}
+.text-animation.hidden li:nth-child(7) {transform: translateX(30px) translateY(20px) ;}
+.text-animation.hidden li:nth-child(8) {transform: translateX(20px) translateY(100px) ;}
+.text-animation.hidden li:nth-child(9) {transform: translateX(-20px) translateY(30px) ;}
+.text-animation.hidden li:nth-child(10) {transform: translateX(-50px) translateY(-80px) ;}
+.text-animation.hidden li:nth-child(11) {transform: translateX(10px) translateY(-20px) ;}
+.text-animation.hidden li:nth-child(12) {transform: translateX(10px) translateY(-60px) ;}
+.text-animation.hidden li:nth-child(13) {transform: translateX(-10px) translateY(70px) ;}
+.text-animation.hidden li:nth-child(14) {transform: translateX(10px) translateY(-20px) ;}
+.text-animation.hidden li:nth-child(15) {transform: translateX(10px) translateY(-40px) ;}
+.text-animation.hidden li:nth-child(16) {transform: translateX(-10px) translateY(60px) ;}
+
+
+
+
 
