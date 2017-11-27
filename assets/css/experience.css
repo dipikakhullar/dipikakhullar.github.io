@@ -1,5 +1,7 @@
 
-
+body {
+	background-color:#212121;
+}
 section {
 	height: 100vh;
 	position: relative;
