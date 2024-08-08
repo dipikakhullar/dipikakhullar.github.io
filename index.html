@@ -1,57 +1,79 @@
 <!DOCTYPE HTML>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Dipika Khullar</title>
     <meta name="author" content="Dipika Khullar">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="stylesheet.css">
-  </head>
-  <body>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
     <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-      <tbody>
-        <tr style="padding:0px">
-          <td style="padding:0px">
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr style="padding:0px">
-                  <td style="padding:2.5%;width:63%;vertical-align:middle">
-                    <p class="name" style="text-align: center;">Dipika Khullar</p>
-                    <p>I'm a researcher and engineer focused on AI and Machine Learning.</p>
-                    <p>
-                      At my current position, I work on various projects involving AI technologies.
-                      I completed my education at [Your University], where I was advised by [Your Advisor].
-                      I've received [Your Awards].
-                    </p>
-                    <p style="text-align:center">
-                      <a href="mailto:dkhullar98@berkeley.edu">Email</a> &nbsp;/&nbsp;
-                      <a href="images/DipikaKhullarCV2024.pdf">CV</a> &nbsp;/&nbsp;
-                      <a href="https://scholar.google.com/citations?user=FdZa3aAAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
-                      <a href="https://twitter.com/dipikakhullar98">Twitter</a> &nbsp;/&nbsp;
-                      <a href="https://github.com/dipikakhullar">Github</a>
-                    </p>
-                  </td>
-                  <td style="padding:2.5%;width:40%;max-width:40%">
-                    <a href="images/profile.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/profile.jpg" class="hoverZoomLink"></a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:20px;width:100%;vertical-align:middle">
-                    <h2>Research</h2>
-                    <p>I'm interested in computer vision, deep learning, generative AI, and image processing. Most of my research is about inferring the physical world (shape, motion, color, light, etc.) from images, usually with radiance fields.</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <!-- Add more research sections as needed -->
-          </td>
-        </tr>
-      </tbody>
+        <tbody>
+            <tr style="padding:0px">
+                <td style="padding:0px">
+                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+                            <tr style="padding:0px">
+                                <td style="padding:2.5%;width:63%;vertical-align:middle">
+                                    <p class="name" style="text-align: center;">Dipika Khullar</p>
+                                    <p>I'm a researcher and engineer focused on AI and Machine Learning.</p>
+                                    <p>
+                                        Currently I work at Amazon AGI as an applied scientist on multimodal pretraining. Prior to this, I completed my undergrad at UC Berkeley in 2020 where I did research with Professor John Canny.
+                                    </p>
+                                    <p style="text-align:center">
+                                        <a href="mailto:dkhullar98@berkeley.edu">Email</a> &nbsp;/&nbsp;
+                                        <a href="images/DipikaKhullarCV2024.pdf">CV</a> &nbsp;/&nbsp;
+                                        <a href="https://scholar.google.com/citations?user=FdZa3aAAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
+                                        <a href="https://twitter.com/dipikakhullar98">Twitter</a> &nbsp;/&nbsp;
+                                        <a href="https://github.com/dipikakhullar">Github</a>
+                                    </p>
+                                </td>
+                                <td style="padding:2.5%;width:40%;max-width:40%">
+                                    <a href="images/profile.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/profile.jpg" class="hoverZoomLink"></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:20px;width:100%;vertical-align:middle">
+                                    <h2>Research</h2>
+                                </td>
+                            </tr>
+                            <!-- New paper section starts here -->
+                            <tr onmouseout="arxiv_stop()" onmouseover="arxiv_start()">
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two" id='arxiv_image'>
+                                            <img src='images/lang_guided_few_shot.png' width="100%">
+                                        </div>
+                                        <img src='images/arxiv_paper.jpg' width="100%">
+                                    </div>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://arxiv.org/abs/2407.16145">
+                                        <span class="papertitle">IMPROVING FEW-SHOT IMAGE CLASSIFICATION THROUGH MULTIPLE CHOICE QUESTIONS</span>
+                                    </a>
+                                    <br>
+                                    <strong>Dipika Khullar</strong>,
+                                    <br>
+                                    <em>Arxiv</em>, 2024
+                                    <br>
+                                    <a href="https://arxiv.org/abs/2407.16145">arXiv</a>
+                                    <p></p>
+                                    <p>
+                                        Rather than relying on the final language output, this approach uses multiple-choice questions to extract prompt-specific latent representations, enriched with relevant visual information. These representations are combined to create a final overall image embedding, which is decoded via reference to latent class prototypes constructed from the few labeled examples.
+                                    </p>
+                                </td>
+                            </tr>
+                            <!-- New paper section ends here -->
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
     </table>
-  </body>
+</body>
 </html>
