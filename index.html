@@ -17,20 +17,19 @@
                             <tr style="padding:0px">
                                 <td style="padding:2.5%;width:63%;vertical-align:middle">
                                     <p class="name" style="text-align: center;">Dipika Khullar</p>
-                                    <p>I'm a researcher and engineer focused on AI and Machine Learning.</p>
-                                    <p>
-                                        Currently I work at Amazon AGI as an applied scientist on multimodal pretraining. Prior to this, I completed my undergrad at UC Berkeley in 2020 where I did research with Professor John Canny.
-                                    </p>
+                                    <p>I'm a researcher and engineer interested in making AI systems safer and more interpretable. Currently, I am working with Fabien Roger through the MATS program on making models more honest. I am also an Applied Scientist at Amazon AGI, where I focus on multimodal pretraining. Previously, I studied at UC Berkeley.</p>
                                     <p style="text-align:center">
                                         <a href="mailto:dkhullar98@berkeley.edu">Email</a> &nbsp;/&nbsp;
-                                        <a href="images/DipikaKhullarCV2024.pdf">CV</a> &nbsp;/&nbsp;
+                                        <a href="data/dipikakhullar_cv.pdf">CV</a> &nbsp;/&nbsp;
                                         <a href="https://scholar.google.com/citations?user=FdZa3aAAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
-                                        <a href="https://twitter.com/dipikakhullar98">Twitter</a> &nbsp;/&nbsp;
+                                        <a href="https://twitter.com/dipikakhullar">Twitter</a> &nbsp;/&nbsp;
                                         <a href="https://github.com/dipikakhullar">Github</a>
                                     </p>
                                 </td>
                                 <td style="padding:2.5%;width:40%;max-width:40%">
-                                    <a href="images/profile.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/profile.jpg" class="hoverZoomLink"></a>
+                                    <div style="width: 300px; height: 300px; border-radius: 50%; overflow: hidden; margin: 0 auto;">
+                                        <a href="images/profile.jpg"><img style="width:100%;height:100%;object-fit: cover;" alt="profile photo" src="images/profile.jpg" class="hoverZoomLink"></a>
+                                    </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -42,9 +41,13 @@
                                     <h2>Research</h2>
                                 </td>
                             </tr>
+                        </tbody>
+                    </table>
+                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
                             <!-- New paper section starts here -->
                             <tr onmouseout="arxiv_stop()" onmouseover="arxiv_start()">
-                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                <td style="padding:20px;width:25%;vertical-align:top">
                                     <div class="one">
                                         <div class="two" id='arxiv_image'>
                                             <img src='images/lang_guided_few_shot.png' width="100%">
@@ -52,23 +55,139 @@
                                         <img src='images/arxiv_paper.jpg' width="100%">
                                     </div>
                                 </td>
-                                <td style="padding:20px;width:75%;vertical-align:middle">
-                                    <a href="https://arxiv.org/abs/2407.16145">
-                                        <span class="papertitle">IMPROVING FEW-SHOT IMAGE CLASSIFICATION THROUGH MULTIPLE CHOICE QUESTIONS</span>
-                                    </a>
-                                    <br>
-                                    <strong>Dipika Khullar</strong>,
-                                    <br>
-                                    <em>Arxiv</em>, 2024
-                                    <br>
-                                    <a href="https://arxiv.org/abs/2407.16145">arXiv</a>
-                                    <p></p>
-                                    <p>
+                                <td style="padding:20px;width:75%;vertical-align:top">
+                                    <span class="papertitle">Improving Few-Shot Image Classification Through Multiple Choice Questions</span>
+                                    <br><br>
+                                    <strong>Dipika Khullar</strong>, Emmett Goodman, Negin Sokhandan
+                                    <br><br>
+                                    <a href="https://arxiv.org/abs/2407.16145">Paper</a>
+                                    <br><br>
+                                    <p style="margin: 0; line-height: 1.6;">
                                         Rather than relying on the final language output, this approach uses multiple-choice questions to extract prompt-specific latent representations, enriched with relevant visual information. These representations are combined to create a final overall image embedding, which is decoded via reference to latent class prototypes constructed from the few labeled examples.
                                     </p>
                                 </td>
                             </tr>
                             <!-- New paper section ends here -->
+                            <!-- Second paper section starts here -->
+                            <tr onmouseout="selfrevision_stop()" onmouseover="selfrevision_start()">
+                                <td style="padding:20px;width:25%;vertical-align:top">
+                                    <div class="one">
+                                        <div class="two" id='selfrevision_image'>
+                                            <img src='images/robot_planning.png' width="100%">
+                                        </div>
+                                        <img src='images/robot_planning.png' width="100%">
+                                    </div>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:top">
+                                    <span class="papertitle">Making VLMs More Robot-Friendly: Self-Critical Distillation of Low-Level Procedural Reasoning</span>
+                                    <br><br>
+                                    Chan Young Park, Jillian Fisher, Marius Memmel, <strong>Dipika Khullar</strong>, Seoho Yun, Abhishek Gupta, Yejin Choi
+                                    <br><br>
+                                    <a href="https://arxiv.org/abs/2507.08224">Paper</a>
+                                    <br><br>
+                                    <p style="margin: 0; line-height: 1.6;">
+                                        We introduce SelfReVision, a lightweight and scalable self-improvement framework for vision-language procedural planning. SelfReVision enables small VLMs to iteratively critique, revise, and verify their own plans without external supervision, drawing inspiration from chain-of-thought prompting and self-instruct paradigms.
+                                    </p>
+                                </td>
+                            </tr>
+                            <!-- Second paper section ends here -->
+                            <!-- Third paper section starts here -->
+                            <tr onmouseout="kaleidoscope_stop()" onmouseover="kaleidoscope_start()">
+                                <td style="padding:20px;width:25%;vertical-align:top">
+                                    <div class="one">
+                                        <div class="two" id='kaleidoscope_image'>
+                                            <img src='images/kaleidescope.png' width="100%">
+                                        </div>
+                                        <img src='images/kaleidescope.png' width="100%">
+                                    </div>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:top">
+                                    <span class="papertitle">Kaleidoscope: In-language Exams for Massively Multilingual Vision Evaluation</span>
+                                    <br><br>
+                                    Israfel Salazar, Manuel Fernández Burda, Shayekh Bin Islam, Arshia Soltani Moakhar, Shivalika Singh, Fabian Farestam, Angelika Romanou, Danylo Boiko, <strong>Dipika Khullar</strong>, Mike Zhang, Dominik Krzemiński, Jekaterina Novikova, Luísa Shimabucoro, Joseph Marvin Imperial, Rishabh Maheshwary, Sharad Duwal, Alfonso Amayuelas, Swati Rajwal, Jebish Purbey, Ahmed Ruby, Nicholas Popovič, Marek Suppa, Azmine Toushik Wasi, Ram Mohan Rao Kadiyala, Olga Tsymboi, Maksim Kostritsya, Bardia Soltani Moakhar, Gabriel da Costa Merlin, Otávio Ferracioli Coletti, Maral Jabbari Shiviari, MohammadAmin farahani fard, Silvia Fernandez, María Grandury, Dmitry Abulkhanov, Drishti Sharma, Andre Guarnier De Mitri, Leticia Bossatto Marchezi, Setayesh Heydari, Johan Obando-Ceron, Nazar Kohut, Beyza Ermis, Desmond Elliott, Enzo Ferrante, Sara Hooker, Marzieh Fadaee
+                                    <br><br>
+                                    <a href="https://arxiv.org/abs/2504.07072">Paper</a>
+                                    <br><br>
+                                    <p style="margin: 0; line-height: 1.6;">
+                                        We propose Kaleidoscope, the most comprehensive exam benchmark to date for multilingual evaluation of vision-language models. Kaleidoscope covers 18 languages and 14 different subjects, amounting to 20,911 multiple-choice questions. Built through open science collaboration, it ensures linguistic and cultural authenticity. Our results highlight the need for progress on culturally inclusive multimodal evaluation frameworks.
+                                    </p>
+                                </td>
+                            </tr>
+                            <!-- Third paper section ends here -->
+                            <!-- Fourth paper section starts here -->
+                            <tr onmouseout="lmreasoning_stop()" onmouseover="lmreasoning_start()">
+                                <td style="padding:20px;width:25%;vertical-align:top">
+                                    <div class="one">
+                                        <div class="two" id='lmreasoning_image'>
+                                            <img src='images/reasoning_models_wait_pareto.png' width="100%">
+                                        </div>
+                                        <img src='images/reasoning_models_wait_pareto.png' width="100%">
+                                    </div>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:top">
+                                    <span class="papertitle">Reasoning Models Reason Inefficiently</span>
+                                    <br><br>
+                                    <strong>Dipika Khullar</strong>, Ashwinee Panda
+                                    <br><br>
+                                    <a href="unpublished_papers/Language_Models_Reason_Inefficiently.pdf">Paper</a>
+                                    <br><br>
+                                    <p style="margin: 0; line-height: 1.6;">
+                                        Large language models (LLMs) produce long, structured reasoning traces that can inflate latency and cost. Our results suggest that while backtracking can help models arrive to the correct answer, they are not a faithful picture of the minimal computation required to solve a task—they can be compressed or restructured. In this paper, we show how to build more efficient and interpretable reasoning processes by identifying and targeting internal directions associated with inefficiency.
+                                    </p>
+                                </td>
+                            </tr>
+                            <!-- Third paper section ends here -->
+                            <!-- Fourth paper section starts here -->
+                            <tr onmouseout="lmsafe_stop()" onmouseover="lmsafe_start()">
+                                <td style="padding:20px;width:25%;vertical-align:top">
+                                    <div class="one">
+                                        <div class="two" id='lmsafe_image'>
+                                            <img src='images/self_sycophancy.png' width="100%">
+                                        </div>
+                                        <img src='images/self_sycophancy.png' width="100%">
+                                    </div>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:top">
+                                    <span class="papertitle">Language Models Rate Their Own Actions As Safer</span>
+                                    <br><br>
+                                    <strong>Dipika Khullar</strong>, Jack Hopkins, Rowan Wang, Fabien Roger
+                                    <br><br>
+                                    <a href="unpublished_papers/Language_Models_Aren_t_Safe.pdf">Paper</a>
+                                    <br><br>
+                                    <p style="margin: 0; line-height: 1.6;">
+                                        Large language models (LLMs) are increasingly used as evaluators of text quality, harmfulness and safety, yet their reliability as self-judges remains unclear. We identify self-attribution bias: when models evaluate actions they think they have just taken, they systematically underestimate risks compared to evaluating the same actions with the same information, but supposedly written by another model. For example, after being forced to click a phishing link, models rate this action as 20% less risky than when judging it in isolation. Evaluating 10 frontier LLMs across 4,500 samples spanning ethics dilemmas, factual questions, and computer-use scenarios, we observe this bias across different domains. AI developers should be careful when they are aware LLMs are rating their own actions.
+                                    </p>
+                                </td>
+                            </tr>
+                            <!-- Fourth paper section ends here -->
+                        </tbody>
+                    </table>
+                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:20px;width:100%;vertical-align:middle">
+                                    <h2>Blog Posts</h2>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:20px;width:100%;vertical-align:top">
+                                    <a href="https://blog.eleuther.ai/tyche-poser-comparison/">
+                                        <span class="papertitle">Research Update: Applications of Local Volume Measurement</span>
+                                    </a>
+                                    <br><br>
+                                    <strong>Dipika Khullar</strong>, David Johnston
+                                    <br>
+                                    <em>EleutherAI Blog</em>, June 2025
+                                    <br><br>
+                                    <p style="margin: 0; line-height: 1.6;">
+                                        We tested local volume measurement for detecting model misalignment and anomalous datapoints using the tyche library. Our results showed that local volume measurements were not competitive with other strategies like POSER for detecting misaligned models, leading us to explore data attribution methods instead.
+                                    </p>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </td>
