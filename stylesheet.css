@@ -130,6 +130,29 @@
     -webkit-transition: opacity .2s ease-in-out;
   }
   
-  span.highlight {
-    background-color: #ffffd0;
+span.highlight {
+  background-color: #ffffd0;
+}
+
+/* Responsive design for better readability */
+@media (max-width: 768px) {
+  .main-container {
+    max-width: 100% !important;
+    min-width: unset !important;
+    margin: 0 10px !important;
   }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .main-container {
+    max-width: 90% !important;
+    min-width: 600px !important;
+  }
+}
+
+@media (min-width: 1201px) {
+  .main-container {
+    max-width: 1200px !important;
+    min-width: 600px !important;
+  }
+}
