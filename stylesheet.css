@@ -143,16 +143,16 @@ span.highlight {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1000px) {
   .main-container {
     max-width: 90% !important;
     min-width: 600px !important;
   }
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1001px) {
   .main-container {
-    max-width: 1200px !important;
+    max-width: 900px !important;
     min-width: 600px !important;
   }
 }
