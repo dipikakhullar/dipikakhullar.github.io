@@ -53,7 +53,7 @@
                                             <em>[September 2025]</em> Won the <a href="https://www.kaggle.com/competitions/openai-gpt-oss-20b-red-teaming/overview">Red‑Teaming Challenge - OpenAI gpt-oss-20b</a> competition, finding previously undetected vulnerabilities and harmful behaviors in OpenAI's newly released open weight model.
                                         </li>
                                         <li style="margin-bottom: 3px;">
-                                            <em>[July 2025]</em> Built <a href="https://github.com/Responsible-Dataset-Sharing/easy-dataset-share">easy-dataset-share</a> - a pip installable CLI tool to aid dataset sharing for researchers. <a href="https://www.lesswrong.com/posts/DA3vbSEfABLdoCt59/we-built-a-tool-to-protect-your-dataset-from-simple-scrapers">Blog post</a>.
+                                            <em>[July 2025]</em> Built <a href="https://github.com/Responsible-Dataset-Sharing/easy-dataset-share">easy-dataset-share</a> - a pip installable CLI tool to aid dataset sharing for researchers. See <a href="https://www.lesswrong.com/posts/DA3vbSEfABLdoCt59/we-built-a-tool-to-protect-your-dataset-from-simple-scrapers">blog</a>, <a href="https://github.com/Responsible-Dataset-Sharing/easy-dataset-share">code</a>.
                                         </li>
                                         <li style="margin-bottom: 3px;">
                                             <em>[June 2025]</em> Started <a href="https://www.matsprogram.org/">MATS</a>, supervised by <a href="https://ethanperez.com/">Ethan Perez</a> and <a href="https://fabienroger.com/">Fabien Roger</a>, working on lie elicitation and lie detection for large language models.
@@ -100,29 +100,6 @@
                                 </td>
                             </tr>
                             <!-- New paper section ends here -->
-                            <!-- Second paper section starts here -->
-                            <tr onmouseout="kaleidoscope_stop()" onmouseover="kaleidoscope_start()">
-                                <td style="padding:20px;width:25%;vertical-align:top">
-                                    <div class="one">
-                                        <div class="two" id='kaleidoscope_image'>
-                                            <img src='images/kaleidescope.png' width="100%">
-                                        </div>
-                                        <img src='images/kaleidescope.png' width="100%">
-                                    </div>
-                                </td>
-                                <td style="padding:20px;width:75%;vertical-align:top">
-                                    <span class="papertitle">Kaleidoscope: In-language Exams for Massively Multilingual Vision Evaluation</span>
-                                    <br><br>
-                                    Israfel Salazar, Manuel Fernández Burda, Shayekh Bin Islam, Arshia Soltani Moakhar, Shivalika Singh, Fabian Farestam, Angelika Romanou, Danylo Boiko, <strong>Dipika Khullar</strong>, Mike Zhang, Dominik Krzemiński, Jekaterina Novikova, Luísa Shimabucoro, Joseph Marvin Imperial, Rishabh Maheshwary, Sharad Duwal, Alfonso Amayuelas, Swati Rajwal, Jebish Purbey, Ahmed Ruby, Nicholas Popovič, Marek Suppa, Azmine Toushik Wasi, Ram Mohan Rao Kadiyala, Olga Tsymboi, Maksim Kostritsya, Bardia Soltani Moakhar, Gabriel da Costa Merlin, Otávio Ferracioli Coletti, Maral Jabbari Shiviari, MohammadAmin farahani fard, Silvia Fernandez, María Grandury, Dmitry Abulkhanov, Drishti Sharma, Andre Guarnier De Mitri, Leticia Bossatto Marchezi, Setayesh Heydari, Johan Obando-Ceron, Nazar Kohut, Beyza Ermis, Desmond Elliott, Enzo Ferrante, Sara Hooker, Marzieh Fadaee
-                                    <br><br>
-                                    <a href="https://arxiv.org/abs/2504.07072">Paper</a>
-                                    <br><br>
-                                    <p style="margin: 0; line-height: 1.6;">
-                                        We propose Kaleidoscope, the most comprehensive exam benchmark to date for multilingual evaluation of vision-language models. Kaleidoscope covers 18 languages and 14 different subjects, amounting to 20,911 multiple-choice questions. Built through open science collaboration, it ensures linguistic and cultural authenticity. Our results highlight the need for progress on culturally inclusive multimodal evaluation frameworks.
-                                    </p>
-                                </td>
-                            </tr>
-                            <!-- Second paper section ends here -->
                             <!-- Third paper section starts here -->
                             <tr onmouseout="lmreasoning_stop()" onmouseover="lmreasoning_start()">
                                 <td style="padding:20px;width:25%;vertical-align:top">
@@ -138,7 +115,8 @@
                                     <br><br>
                                     <strong>Dipika Khullar</strong>, Ashwinee Panda, Curt Tigges
                                     <br><br>
-                                    <a href="unpublished_papers/Language_Models_Reason_Inefficiently.pdf">Paper</a>
+                                    <a href="unpublished_papers/Language_Models_Reason_Inefficiently.pdf">Paper</a> &nbsp;/&nbsp;
+                                    <a href="https://github.com/dipikakhullar/cot-reasoning">Code</a>
                                     <br><br>
                                     <p style="margin: 0; line-height: 1.6;">
                                         Large language models (LLMs) produce long, structured reasoning traces that can inflate latency and cost. Our results suggest that while backtracking can help models arrive to the correct answer, they are not a faithful picture of the minimal computation required to solve a task—they can be compressed or restructured. In this paper, we show how to build more efficient and interpretable reasoning processes by identifying and targeting internal directions associated with inefficiency.
@@ -161,7 +139,8 @@
                                     <br><br>
                                     <strong>Dipika Khullar</strong>, Jack Hopkins, Rowan Wang, Fabien Roger
                                     <br><br>
-                                    <a href="unpublished_papers/Language_Models_Aren_t_Safe.pdf">Paper</a>
+                                    <a href="unpublished_papers/Language_Models_Aren_t_Safe.pdf">Paper</a> &nbsp;/&nbsp;
+                                    <a href="https://github.com/safety-research/attribution-bias">Code</a>
                                     <br><br>
                                     <p style="margin: 0; line-height: 1.6;">
                                         Large language models (LLMs) are increasingly used as evaluators of text quality, harmfulness and safety, yet their reliability as self-judges remains unclear. We identify self-attribution bias: when models evaluate actions they think they have just taken, they systematically underestimate risks compared to evaluating the same actions with the same information, but supposedly written by another model. For example, after being forced to click a phishing link, models rate this action as 20% less risky than when judging it in isolation. Evaluating 10 frontier LLMs across 4,500 samples spanning ethics dilemmas, factual questions, and computer-use scenarios, we observe this bias across different domains. AI developers should be careful when they are aware LLMs are rating their own actions.
@@ -169,6 +148,29 @@
                                 </td>
                             </tr>
                             <!-- Fourth paper section ends here -->
+                            <!-- Kaleidoscope paper section starts here -->
+                            <tr onmouseout="kaleidoscope_stop()" onmouseover="kaleidoscope_start()">
+                                <td style="padding:20px;width:25%;vertical-align:top">
+                                    <div class="one">
+                                        <div class="two" id='kaleidoscope_image'>
+                                            <img src='images/kaleidescope.png' width="100%">
+                                        </div>
+                                        <img src='images/kaleidescope.png' width="100%">
+                                    </div>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:top">
+                                    <span class="papertitle">Kaleidoscope: In-language Exams for Massively Multilingual Vision Evaluation</span>
+                                    <br><br>
+                                    Israfel Salazar, Manuel Fernández Burda, Shayekh Bin Islam, Arshia Soltani Moakhar, Shivalika Singh, Fabian Farestam, Angelika Romanou, Danylo Boiko, <strong>Dipika Khullar</strong>, Mike Zhang, Dominik Krzemiński, Jekaterina Novikova, Luísa Shimabucoro, Joseph Marvin Imperial, Rishabh Maheshwary, Sharad Duwal, Alfonso Amayuelas, Swati Rajwal, Jebish Purbey, Ahmed Ruby, Nicholas Popovič, Marek Suppa, Azmine Toushik Wasi, Ram Mohan Rao Kadiyala, Olga Tsymboi, Maksim Kostritsya, Bardia Soltani Moakhar, Gabriel da Costa Merlin, Otávio Ferracioli Coletti, Maral Jabbari Shiviari, MohammadAmin farahani fard, Silvia Fernandez, María Grandury, Dmitry Abulkhanov, Drishti Sharma, Andre Guarnier De Mitri, Leticia Bossatto Marchezi, Setayesh Heydari, Johan Obando-Ceron, Nazar Kohut, Beyza Ermis, Desmond Elliott, Enzo Ferrante, Sara Hooker, Marzieh Fadaee
+                                    <br><br>
+                                    <a href="https://arxiv.org/abs/2504.07072">Paper</a>
+                                    <br><br>
+                                    <p style="margin: 0; line-height: 1.6;">
+                                        We propose Kaleidoscope, the most comprehensive exam benchmark to date for multilingual evaluation of vision-language models. Kaleidoscope covers 18 languages and 14 different subjects, amounting to 20,911 multiple-choice questions. Built through open science collaboration, it ensures linguistic and cultural authenticity. Our results highlight the need for progress on culturally inclusive multimodal evaluation frameworks.
+                                    </p>
+                                </td>
+                            </tr>
+                            <!-- Kaleidoscope paper section ends here -->
                             <!-- Fifth paper section starts here -->
                             <tr onmouseout="arxiv_stop()" onmouseover="arxiv_start()">
                                 <td style="padding:20px;width:25%;vertical-align:top">
@@ -205,6 +207,21 @@
                     </table>
                     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                         <tbody>
+                            <tr>
+                                <td style="padding:20px;width:100%;vertical-align:top">
+                                    <a href="https://www.lesswrong.com/posts/DA3vbSEfABLdoCt59/we-built-a-tool-to-protect-your-dataset-from-simple-scrapers">
+                                        <span class="papertitle">We Built a Tool to Protect Your Dataset From Simple Scrapers</span>
+                                    </a>
+                                    <br><br>
+                                    <strong>Dipika Khullar</strong>, Alex Turner, Edward Turner, Roy Rinberg
+                                    <br>
+                                    <em>LessWrong</em>, July 2025
+                                    <br><br>
+                                    <p style="margin: 0; line-height: 1.6;">
+                                        We built easy-dataset-share, a CLI tool that helps AI researchers share datasets responsibly by preventing evaluation contamination. The tool provides basic protection against scraping through canary markers, hash verification, and optional encryption, while also generating robots.txt and Terms of Service to deter commercial data mining.
+                                    </p>
+                                </td>
+                            </tr>
                             <tr>
                                 <td style="padding:20px;width:100%;vertical-align:top">
                                     <a href="https://blog.eleuther.ai/tyche-poser-comparison/">
