@@ -9,6 +9,11 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
+    <!-- Dark/Light Mode Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span id="themeIcon">🌙</span>
+    </button>
+
     <table class="main-container" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
             <tr style="padding:0px">
@@ -77,6 +82,26 @@
                     </table>
                     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                         <tbody>
+                            <!-- ARR submission paper section starts here -->
+                            <tr>
+                                <td style="padding:20px;width:25%;vertical-align:top">
+                                    <div class="one">
+                                        <img src='images/arxiv_paper.jpg' width="100%">
+                                    </div>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:top">
+                                    <span class="papertitle">Making Language Models Version Aware</span>
+                                    <br><br>
+                                    <em>In submission – ARR October 2025</em>
+                                    <br><br>
+                                    <a href="unpublished_papers/Olmo_Code%20(6).pdf">Paper</a>
+                                    <br><br>
+                                    <p style="margin: 0; line-height: 1.6;">
+                                        We investigate the high rate of syntax-related failures that OLMo-2 exhibits on code benchmarks and trace the issue to Python 2 and Python 3 snippets being interleaved during pretraining. We construct version-aware code instructions by parsing the original corpus and fine-tuning OLMo models so that prompts explicitly encode targeted Python versions. A lightweight LoRA update over just 5K examples dramatically improves HumanEval and MBPP performance while preserving capability on math, QA, and reading comprehension tasks.
+                                    </p>
+                                </td>
+                            </tr>
+                            <!-- ARR submission paper section ends here -->
                             <!-- New paper section starts here -->
                             <tr onmouseout="selfrevision_stop()" onmouseover="selfrevision_start()">
                                 <td style="padding:20px;width:25%;vertical-align:top">
@@ -273,5 +298,32 @@
             </tr>
         </tbody>
     </table>
+
+    <script>
+        // Dark mode toggle functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const htmlElement = document.documentElement;
+
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        htmlElement.setAttribute('data-theme', currentTheme);
+        updateIcon(currentTheme);
+
+        // Toggle theme on button click
+        themeToggle.addEventListener('click', function() {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            htmlElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateIcon(newTheme);
+        });
+
+        // Update icon based on theme
+        function updateIcon(theme) {
+            themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+        }
+    </script>
 </body>
 </html>
