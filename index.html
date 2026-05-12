@@ -9,11 +9,6 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
-    <!-- Dark/Light Mode Toggle Button -->
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-        <span id="themeIcon">🌙</span>
-    </button>
-
     <table class="main-container" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
             <tr style="padding:0px">
@@ -23,11 +18,13 @@
                             <tr style="padding:0px">
                                 <td style="padding:2.5%;width:63%;vertical-align:middle">
                                     <p class="name" style="text-align: center;">Dipika Khullar</p>
-                                    <p>I'm a researcher and engineer interested in making AI systems safer and more interpretable. Currently, I am working with <a href="https://www.lesswrong.com/users/fabien-roger">Fabien Roger</a> through the <a href="https://www.matsprogram.org/">MATS program</a> on making models more honest. I am also an Applied Scientist at Amazon AGI, where I focus on multimodal pretraining. Previously, I studied at UC Berkeley. I am also extremely grateful to have worked with wonderful open community research initiatives within <a href="https://www.eleuther.ai/">EleutherAI</a> and <a href="https://cohere.com/research">Cohere Labs</a>.</p>
+                                    <p>
+                                        I'm a researcher and engineer interested in making AI systems safer and more interpretable. Currently, I am working with <a href="https://www.lesswrong.com/users/fabien-roger">Fabien Roger</a> through the <a href="https://www.matsprogram.org/">MATS program</a> on making models more honest. I am also an Applied Scientist at Amazon AGI, where I focus on multimodal pretraining. Previously, I studied at UC Berkeley. I am also extremely grateful to have worked with wonderful open community research initiatives within <a href="https://www.eleuther.ai/">EleutherAI</a> and <a href="https://cohere.com/research">Cohere Labs</a>.
+                                    </p>
                                     <p style="text-align:center">
                                         <a href="mailto:dkhullar98@berkeley.edu">Email</a> &nbsp;/&nbsp;
                                         <a href="data/dipikakhullar_cv.pdf">CV</a> &nbsp;/&nbsp;
-                                        <a href="https://scholar.google.com/citations?user=FdZa3aAAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
+                                        <a href="https://scholar.google.com/citations?user=FdZa3aAAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
                                         <a href="https://twitter.com/dipikakhullar">Twitter</a> &nbsp;/&nbsp;
                                         <a href="https://github.com/dipikakhullar">Github</a>
                                     </p>
@@ -40,20 +37,17 @@
                             </tr>
                         </tbody>
                     </table>
+
                     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                         <tbody>
                             <tr>
-                                <td style="padding:20px;width:100%;vertical-align:middle">
+                                <td style="padding:16px;width:100%;vertical-align:middle">
                                     <h2>News</h2>
                                 </td>
                             </tr>
-                        </tbody>
-                    </table>
-                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
                             <tr>
-                                <td style="padding:10px;width:100%;vertical-align:top">
-                                    <ul style="margin: 0; padding-left: 20px; line-height: 1.6;">
+                                <td style="padding:0 16px 16px 16px;width:100%;vertical-align:top">
+                                    <ul style="margin: 0; padding-left: 20px; line-height: 1.5;">
                                         <li style="margin-bottom: 3px;">
                                             <em>[September 2025]</em> Won the <a href="https://www.kaggle.com/competitions/openai-gpt-oss-20b-red-teaming/overview">Red‑Teaming Challenge - OpenAI gpt-oss-20b</a> competition, finding previously undetected vulnerabilities and harmful behaviors in OpenAI's newly released open weight model.
                                         </li>
@@ -71,213 +65,217 @@
                             </tr>
                         </tbody>
                     </table>
+
                     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                         <tbody>
                             <tr>
-                                <td style="padding:20px;width:100%;vertical-align:middle">
+                                <td style="padding:16px;width:100%;vertical-align:middle">
                                     <h2>Research</h2>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+                    <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                         <tbody>
-                            <!-- Fourth paper section starts here -->
-                            <tr onmouseout="lmsafe_stop()" onmouseover="lmsafe_start()">
-                                <td style="padding:10px;width:25%;vertical-align:top">
+
+                            <tr>
+                                <td style="padding:16px;width:20%;vertical-align:middle">
                                     <div class="one">
-                                        <div class="two" id='lmsafe_image'>
-                                            <img src='images/self_sycophancy.png' width="100%">
-                                        </div>
-                                        <img src='images/self_sycophancy.png' width="100%">
+                                        <img src="images/self_sycophancy.png" width="100%">
                                     </div>
                                 </td>
-                                <td style="padding:10px;width:75%;vertical-align:top">
-                                    <span class="papertitle">Self-Attribution Bias: When AI Monitors Go Easy on Themselves</span>
+                                <td style="padding:8px;width:80%;vertical-align:middle">
+                                    <a href="https://arxiv.org/abs/2603.04582">
+                                        <span class="papertitle">Self-Attribution Bias: When AI Monitors Go Easy on Themselves</span>
+                                    </a>
                                     <br>
                                     <strong>Dipika Khullar</strong>, Jack Hopkins, Rowan Wang, Fabien Roger
                                     <br>
-                                    <a href="https://arxiv.org/abs/2603.04582">arXiv</a> &nbsp;/&nbsp;
-                                    <a href="https://openreview.net/forum?id=hv9leXYyPP">OpenReview</a> &nbsp;/&nbsp;
-                                    <a href="https://www.lesswrong.com/posts/Y4rFNoLaCd7GwdpZj/self-attribution-bias-when-ai-monitors-go-easy-on-themselves">LessWrong</a> &nbsp;/&nbsp;
-                                    <a href="https://x.com/dipikakhullar/status/2030103990822916440">Tweet</a> &nbsp;/&nbsp;
+                                    <em>arXiv</em>, 2026
+                                    <br>
+                                    <a href="https://arxiv.org/abs/2603.04582">arXiv</a> /
+                                    <a href="https://openreview.net/forum?id=hv9leXYyPP">OpenReview</a> /
+                                    <a href="https://www.lesswrong.com/posts/Y4rFNoLaCd7GwdpZj/self-attribution-bias-when-ai-monitors-go-easy-on-themselves">LessWrong</a> /
+                                    <a href="https://x.com/dipikakhullar/status/2030103990822916440">Tweet</a> /
                                     <a href="https://github.com/safety-research/attribution-bias">Code</a>
-                                    <p style="margin: 8px 0 0 0; line-height: 1.2;">
+                                    <p></p>
+                                    <p>
                                         We identify self-attribution bias: LLMs systematically rate actions as less risky and more correct when those actions appear to be their own prior outputs. This failure is largely invisible in standard off-policy evaluations, causing monitors to look more reliable than they actually are in deployment.
                                     </p>
                                 </td>
                             </tr>
-                            <!-- Fourth paper section ends here -->
-                            <!-- New paper section starts here -->
-                            <tr onmouseout="selfrevision_stop()" onmouseover="selfrevision_start()">
-                                <td style="padding:10px;width:25%;vertical-align:top">
+
+                            <tr>
+                                <td style="padding:16px;width:20%;vertical-align:middle">
                                     <div class="one">
-                                        <div class="two" id='selfrevision_image'>
-                                            <img src='images/robot_planning.png' width="100%">
-                                        </div>
-                                        <img src='images/robot_planning.png' width="100%">
+                                        <img src="images/robot_planning.png" width="100%">
                                     </div>
                                 </td>
-                                <td style="padding:10px;width:75%;vertical-align:top">
-                                    <span class="papertitle">Making VLMs More Robot-Friendly: Self-Critical Distillation of Low-Level Procedural Reasoning</span>
+                                <td style="padding:8px;width:80%;vertical-align:middle">
+                                    <a href="https://arxiv.org/abs/2507.08224">
+                                        <span class="papertitle">Making VLMs More Robot-Friendly: Self-Critical Distillation of Low-Level Procedural Reasoning</span>
+                                    </a>
                                     <br>
                                     Chan Young Park, Jillian Fisher, Marius Memmel, <strong>Dipika Khullar</strong>, Seoho Yun, Abhishek Gupta, Yejin Choi
                                     <br>
+                                    <em>arXiv</em>, 2025
+                                    <br>
                                     <a href="https://arxiv.org/abs/2507.08224">arXiv</a>
-                                    <p style="margin: 8px 0 0 0; line-height: 1.2;">
+                                    <p></p>
+                                    <p>
                                         SelfReVision is a lightweight self-improvement framework that enables small VLMs to iteratively critique, revise, and verify their own procedural plans without external supervision.
                                     </p>
                                 </td>
                             </tr>
-                            <!-- New paper section ends here -->
-                            <!-- Kaleidoscope paper section starts here -->
-                            <tr onmouseout="kaleidoscope_stop()" onmouseover="kaleidoscope_start()">
-                                <td style="padding:10px;width:25%;vertical-align:top">
+
+                            <tr>
+                                <td style="padding:16px;width:20%;vertical-align:middle">
                                     <div class="one">
-                                        <div class="two" id='kaleidoscope_image'>
-                                            <img src='images/kaleidescope.png' width="100%">
-                                        </div>
-                                        <img src='images/kaleidescope.png' width="100%">
+                                        <img src="images/kaleidescope.png" width="100%">
                                     </div>
                                 </td>
-                                <td style="padding:10px;width:75%;vertical-align:top">
-                                    <span class="papertitle">Kaleidoscope: In-language Exams for Massively Multilingual Vision Evaluation</span>
+                                <td style="padding:8px;width:80%;vertical-align:middle">
+                                    <a href="https://arxiv.org/abs/2504.07072">
+                                        <span class="papertitle">Kaleidoscope: In-language Exams for Massively Multilingual Vision Evaluation</span>
+                                    </a>
                                     <br>
                                     Israfel Salazar, Manuel Fernández Burda, Shayekh Bin Islam, Arshia Soltani Moakhar, Shivalika Singh, Fabian Farestam, Angelika Romanou, Danylo Boiko, <strong>Dipika Khullar</strong>, Mike Zhang, Dominik Krzemiński, Jekaterina Novikova, Luísa Shimabucoro, Joseph Marvin Imperial, Rishabh Maheshwary, Sharad Duwal, Alfonso Amayuelas, Swati Rajwal, Jebish Purbey, Ahmed Ruby, Nicholas Popovič, Marek Suppa, Azmine Toushik Wasi, Ram Mohan Rao Kadiyala, Olga Tsymboi, Maksim Kostritsya, Bardia Soltani Moakhar, Gabriel da Costa Merlin, Otávio Ferracioli Coletti, Maral Jabbari Shiviari, MohammadAmin farahani fard, Silvia Fernandez, María Grandury, Dmitry Abulkhanov, Drishti Sharma, Andre Guarnier De Mitri, Leticia Bossatto Marchezi, Setayesh Heydari, Johan Obando-Ceron, Nazar Kohut, Beyza Ermis, Desmond Elliott, Enzo Ferrante, Sara Hooker, Marzieh Fadaee
                                     <br>
-                                    <em>ICLR 2026 Poster</em>
+                                    <em>ICLR</em>, 2026
                                     <br>
-                                    <a href="https://arxiv.org/abs/2504.07072">arXiv</a> &nbsp;/&nbsp;
+                                    <a href="https://arxiv.org/abs/2504.07072">arXiv</a> /
                                     <a href="https://openreview.net/forum?id=zCYXhSy9UH">OpenReview</a>
-                                    <p style="margin: 8px 0 0 0; line-height: 1.2;">
+                                    <p></p>
+                                    <p>
                                         Kaleidoscope is the most comprehensive in-language exam benchmark for multilingual vision-language models, covering 18 languages and 14 subjects across 20,911 questions, and reveals large performance gaps for low-resource languages.
                                     </p>
                                 </td>
                             </tr>
-                            <!-- Kaleidoscope paper section ends here -->
-                            <!-- Fifth paper section starts here -->
-                            <tr onmouseout="arxiv_stop()" onmouseover="arxiv_start()">
-                                <td style="padding:10px;width:25%;vertical-align:top">
+
+                            <tr>
+                                <td style="padding:16px;width:20%;vertical-align:middle">
                                     <div class="one">
-                                        <div class="two" id='arxiv_image'>
-                                            <img src='images/lang_guided_few_shot.png' width="100%">
-                                        </div>
-                                        <img src='images/arxiv_paper.jpg' width="100%">
+                                        <img src="images/lang_guided_few_shot.png" width="100%">
                                     </div>
                                 </td>
-                                <td style="padding:10px;width:75%;vertical-align:top">
-                                    <span class="papertitle">Improving Few-Shot Image Classification Through Multiple Choice Questions</span>
+                                <td style="padding:8px;width:80%;vertical-align:middle">
+                                    <a href="https://arxiv.org/abs/2407.16145">
+                                        <span class="papertitle">Improving Few-Shot Image Classification Through Multiple Choice Questions</span>
+                                    </a>
                                     <br>
                                     <strong>Dipika Khullar</strong>, Emmett Goodman, Negin Sokhandan
                                     <br>
+                                    <em>arXiv</em>, 2024
+                                    <br>
                                     <a href="https://arxiv.org/abs/2407.16145">arXiv</a>
-                                    <p style="margin: 8px 0 0 0; line-height: 1.2;">
+                                    <p></p>
+                                    <p>
                                         We improve few-shot image classification by using multiple-choice questions to extract prompt-specific latent representations from VLMs, which are then matched against class prototypes built from a small set of labeled examples.
                                     </p>
                                 </td>
                             </tr>
-                            <!-- Fifth paper section ends here -->
+
                         </tbody>
                     </table>
+
                     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                         <tbody>
                             <tr>
-                                <td style="padding:20px;width:100%;vertical-align:middle">
-                                    <h2>Blog Posts</h2>
+                                <td style="padding:16px;width:100%;vertical-align:middle">
+                                    <h2>Blogs</h2>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+                    <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                         <tbody>
+
                             <tr>
-                                <td style="padding:10px;width:100%;vertical-align:top">
+                                <td style="padding:8px 16px;width:100%;vertical-align:middle">
                                     <a href="https://www.lesswrong.com/posts/DA3vbSEfABLdoCt59/we-built-a-tool-to-protect-your-dataset-from-simple-scrapers">
                                         <span class="papertitle">We Built a Tool to Protect Your Dataset From Simple Scrapers</span>
                                     </a>
                                     <br>
                                     <strong>Dipika Khullar</strong>, Alex Turner, Edward Turner, Roy Rinberg
                                     <br>
-                                    <em>LessWrong</em>, July 2025
-                                    <p style="margin: 8px 0 0 0; line-height: 1.2;">
-                                        We built easy-dataset-share, a CLI tool that helps AI researchers share datasets responsibly by preventing evaluation contamination. The tool provides basic protection against scraping through canary markers, hash verification, and optional encryption, while also generating robots.txt and Terms of Service to deter commercial data mining.
+                                    <em>LessWrong</em>, 2025
+                                    <p></p>
+                                    <p>
+                                        A pip-installable CLI tool that helps researchers share datasets responsibly using canary markers, hash verification, optional encryption, and auto-generated robots.txt to deter scraping and evaluation contamination.
                                     </p>
                                 </td>
                             </tr>
+
                             <tr>
-                                <td style="padding:10px;width:100%;vertical-align:top">
+                                <td style="padding:8px 16px;width:100%;vertical-align:middle">
                                     <a href="https://blog.eleuther.ai/tyche-poser-comparison/">
                                         <span class="papertitle">Research Update: Applications of Local Volume Measurement</span>
                                     </a>
                                     <br>
                                     <strong>Dipika Khullar</strong>, David Johnston
                                     <br>
-                                    <em>EleutherAI Blog</em>, June 2025
-                                    <p style="margin: 8px 0 0 0; line-height: 1.2;">
-                                        We tested local volume measurement for detecting model misalignment and anomalous datapoints using the tyche library. Our results showed that local volume measurements were not competitive with other strategies like POSER for detecting misaligned models, leading us to explore data attribution methods instead.
+                                    <em>EleutherAI Blog</em>, 2025
+                                    <p></p>
+                                    <p>
+                                        Local volume measurement with the tyche library underperforms strategies like POSER for detecting misaligned models, motivating a pivot to data attribution methods.
                                     </p>
                                 </td>
                             </tr>
+
                             <tr>
-                                <td style="padding:10px;width:100%;vertical-align:top">
+                                <td style="padding:8px 16px;width:100%;vertical-align:middle">
                                     <a href="https://aws.amazon.com/blogs/machine-learning/build-streamlit-apps-in-amazon-sagemaker-studio/">
                                         <span class="papertitle">Build Streamlit apps in Amazon SageMaker AI Studio</span>
                                     </a>
                                     <br>
                                     <strong>Dipika Khullar</strong>, Marcelo Aberle, Yash Shah
                                     <br>
-                                    <em>AWS Machine Learning Blog</em>, April 2023
-                                    <p style="margin: 8px 0 0 0; line-height: 1.2;">
-                                        This post outlines how to build and host Streamlit web apps in Amazon SageMaker AI Studio in a secure and reproducible manner without any time-consuming front-end development. We demonstrate with a custom Amazon Rekognition demo that annotates and labels uploaded images, serving as a starting point that can be generalized to demo any custom ML model.
+                                    <em>AWS Machine Learning Blog</em>, 2023
+                                    <p></p>
+                                    <p>
+                                        A walkthrough of building and securely hosting Streamlit web apps inside Amazon SageMaker Studio, demonstrated with a custom Amazon Rekognition image-annotation demo.
                                     </p>
                                 </td>
                             </tr>
+
                             <tr>
-                                <td style="padding:10px;width:100%;vertical-align:top">
+                                <td style="padding:8px 16px;width:100%;vertical-align:middle">
                                     <a href="https://aws.amazon.com/blogs/machine-learning/create-amazon-sagemaker-models-using-the-pytorch-model-zoo/">
                                         <span class="papertitle">Create Amazon SageMaker models using the PyTorch Model Zoo</span>
                                     </a>
                                     <br>
                                     <strong>Dipika Khullar</strong>, Marcelo Aberle, Ninad Kulkarni, Yash Shah
                                     <br>
-                                    <em>AWS Machine Learning Blog</em>, December 2022
-                                    <p style="margin: 8px 0 0 0; line-height: 1.2;">
-                                        This blog post demonstrates how to perform ML inference using an object detection model from the PyTorch Model Zoo within SageMaker. We walk through an end-to-end example using a Faster R-CNN object detection model, from loading model weights to deploying via SageMaker Batch Transform and visualizing results.
+                                    <em>AWS Machine Learning Blog</em>, 2022
+                                    <p></p>
+                                    <p>
+                                        An end-to-end example of running object detection inference with a Faster R-CNN model from the PyTorch Model Zoo via SageMaker Batch Transform.
+                                    </p>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:0px">
+                                    <br>
+                                    <p style="text-align:right;font-size:small;">
+                                        Website template from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
                                     </p>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
+
                 </td>
             </tr>
         </tbody>
     </table>
 
-    <script>
-        // Dark mode toggle functionality
-        const themeToggle = document.getElementById('themeToggle');
-        const themeIcon = document.getElementById('themeIcon');
-        const htmlElement = document.documentElement;
-
-        // Check for saved theme preference or default to light mode
-        const currentTheme = localStorage.getItem('theme') || 'light';
-        htmlElement.setAttribute('data-theme', currentTheme);
-        updateIcon(currentTheme);
-
-        // Toggle theme on button click
-        themeToggle.addEventListener('click', function() {
-            const currentTheme = htmlElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
-            htmlElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateIcon(newTheme);
-        });
-
-        // Update icon based on theme
-        function updateIcon(theme) {
-            themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
-        }
-    </script>
 </body>
 </html>
